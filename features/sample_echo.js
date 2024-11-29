@@ -29,7 +29,6 @@ module.exports = function(controller) {
 	controller.hears('2kg','message,direct_message', async(bot, message) => {
         await bot.reply(message, 'Nu pize malačius, o daba klausyk ir įrašyk ketvirtą raktą.');
     });
-
 	controller.hears('raktas4','message,direct_message', async(bot, message) => {
         await bot.reply(message, 'o kurwa, važiojem - ar golfas cianit? - Cianit; Nicianit;');
     });
