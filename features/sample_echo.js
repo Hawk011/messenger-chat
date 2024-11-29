@@ -12,9 +12,9 @@ module.exports = function(controller) {
         await bot.reply(message, `Atsiprašau, raktas arba atsakymas neteisingas - ${ message.text }`);
     });
 	controller.hears('raktas1','message,direct_message', async(bot, message) => {
-        await bot.reply(message, 'Šaunu, suradai mane! Siunčiu tavo pirmajį klausimą - Kokios trys kalbos yra atvaizduotos prie įėjimo į užupį? 3; 4; 5;');
+        await bot.reply(message, 'Šaunu, suradai mane! Siunčiu tavo pirmajį klausimą - Kokios trys kalbos yra atvaizduotos prie įėjimo į užupį? trys; keturi; penki;');
     });
-	controller.hears('4','message,direct_message', async(bot, message) => {
+	controller.hears('keturi','message,direct_message', async(bot, message) => {
         await bot.reply(message, 'Nu pize malačius, o daba klausyk ir įrašyk antrą raktą.');
     });
 	controller.hears('raktas2','message,direct_message', async(bot, message) => {
